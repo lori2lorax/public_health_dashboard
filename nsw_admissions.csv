@@ -1,0 +1,121 @@
+year,LHD,indicator,value
+2017-18,Central Coast,Hospital admissions,89667
+2017-18,Far West,Hospital admissions,8518
+2017-18,Hunter New England,Hospital admissions,218039
+2017-18,Illawarra Shoalhaven,Hospital admissions,90321
+2017-18,Mid North Coast,Hospital admissions,76108
+2017-18,Murrumbidgee,Hospital admissions,68348
+2017-18,Nepean Blue Mountains,Hospital admissions,85198
+2017-18,Northern NSW,Hospital admissions,98965
+2017-18,Northern Sydney,Hospital admissions,148869
+2017-18,South Eastern Sydney,Hospital admissions,172110
+2017-18,South Western Sydney,Hospital admissions,228322
+2017-18,Southern NSW,Hospital admissions,48984
+2017-18,Sydney,Hospital admissions,169376
+2017-18,Western NSW,Hospital admissions,79463
+2017-18,Western Sydney,Hospital admissions,176335
+2018-19,Central Coast,Hospital admissions,90810
+2018-19,Far West,Hospital admissions,8514
+2018-19,Hunter New England,Hospital admissions,217483
+2018-19,Illawarra Shoalhaven,Hospital admissions,91678
+2018-19,Mid North Coast,Hospital admissions,74609
+2018-19,Murrumbidgee,Hospital admissions,68917
+2018-19,Nepean Blue Mountains,Hospital admissions,87193
+2018-19,Northern NSW,Hospital admissions,97262
+2018-19,Northern Sydney,Hospital admissions,151721
+2018-19,South Eastern Sydney,Hospital admissions,182135
+2018-19,South Western Sydney,Hospital admissions,232389
+2018-19,Southern NSW,Hospital admissions,50715
+2018-19,Sydney,Hospital admissions,172656
+2018-19,Western NSW,Hospital admissions,82406
+2018-19,Western Sydney,Hospital admissions,172449
+2019-20,Central Coast,Hospital admissions,86851
+2019-20,Far West,Hospital admissions,8324
+2019-20,Hunter New England,Hospital admissions,209751
+2019-20,Illawarra Shoalhaven,Hospital admissions,89337
+2019-20,Mid North Coast,Hospital admissions,71729
+2019-20,Murrumbidgee,Hospital admissions,64195
+2019-20,Nepean Blue Mountains,Hospital admissions,84516
+2019-20,Northern NSW,Hospital admissions,96899
+2019-20,Northern Sydney,Hospital admissions,138823
+2019-20,South Eastern Sydney,Hospital admissions,179991
+2019-20,South Western Sydney,Hospital admissions,224981
+2019-20,Southern NSW,Hospital admissions,46997
+2019-20,Sydney,Hospital admissions,162052
+2019-20,Western NSW,Hospital admissions,81821
+2019-20,Western Sydney,Hospital admissions,167478
+2020-21,Central Coast,Hospital admissions,91725
+2020-21,Far West,Hospital admissions,8503
+2020-21,Hunter New England,Hospital admissions,220111
+2020-21,Illawarra Shoalhaven,Hospital admissions,92406
+2020-21,Mid North Coast,Hospital admissions,78998
+2020-21,Murrumbidgee,Hospital admissions,66841
+2020-21,Nepean Blue Mountains,Hospital admissions,85858
+2020-21,Northern NSW,Hospital admissions,99688
+2020-21,Northern Sydney,Hospital admissions,144475
+2020-21,South Eastern Sydney,Hospital admissions,193106
+2020-21,South Western Sydney,Hospital admissions,241093
+2020-21,Southern NSW,Hospital admissions,48413
+2020-21,Sydney,Hospital admissions,163312
+2020-21,Western NSW,Hospital admissions,84281
+2020-21,Western Sydney,Hospital admissions,177704
+2021-22,Central Coast,Hospital admissions,85030
+2021-22,Far West,Hospital admissions,7863
+2021-22,Hunter New England,Hospital admissions,213137
+2021-22,Illawarra Shoalhaven,Hospital admissions,92529
+2021-22,Mid North Coast,Hospital admissions,77274
+2021-22,Murrumbidgee,Hospital admissions,64922
+2021-22,Nepean Blue Mountains,Hospital admissions,86584
+2021-22,Northern NSW,Hospital admissions,93929
+2021-22,Northern Sydney,Hospital admissions,132434
+2021-22,South Eastern Sydney,Hospital admissions,171995
+2021-22,South Western Sydney,Hospital admissions,212917
+2021-22,Southern NSW,Hospital admissions,46359
+2021-22,Sydney,Hospital admissions,141872
+2021-22,Western NSW,Hospital admissions,78208
+2021-22,Western Sydney,Hospital admissions,154561
+2022-23,Central Coast,Hospital admissions,96879
+2022-23,Far West,Hospital admissions,8488
+2022-23,Hunter New England,Hospital admissions,213612
+2022-23,Illawarra Shoalhaven,Hospital admissions,95648
+2022-23,Mid North Coast,Hospital admissions,77288
+2022-23,Murrumbidgee,Hospital admissions,69581
+2022-23,Nepean Blue Mountains,Hospital admissions,86138
+2022-23,Northern NSW,Hospital admissions,94328
+2022-23,Northern Sydney,Hospital admissions,140582
+2022-23,South Eastern Sydney,Hospital admissions,181192
+2022-23,South Western Sydney,Hospital admissions,237495
+2022-23,Southern NSW,Hospital admissions,47671
+2022-23,Sydney,Hospital admissions,159090
+2022-23,Western NSW,Hospital admissions,82783
+2022-23,Western Sydney,Hospital admissions,166535
+2023-24,Central Coast,Hospital admissions,96218
+2023-24,Far West,Hospital admissions,8975
+2023-24,Hunter New England,Hospital admissions,215873
+2023-24,Illawarra Shoalhaven,Hospital admissions,105851
+2023-24,Mid North Coast,Hospital admissions,81155
+2023-24,Murrumbidgee,Hospital admissions,71464
+2023-24,Nepean Blue Mountains,Hospital admissions,92114
+2023-24,Northern NSW,Hospital admissions,96960
+2023-24,Northern Sydney,Hospital admissions,146612
+2023-24,South Eastern Sydney,Hospital admissions,185298
+2023-24,South Western Sydney,Hospital admissions,246373
+2023-24,Southern NSW,Hospital admissions,49378
+2023-24,Sydney,Hospital admissions,163878
+2023-24,Western NSW,Hospital admissions,87515
+2023-24,Western Sydney,Hospital admissions,176528
+2024-25,Central Coast,Hospital admissions,93639
+2024-25,Far West,Hospital admissions,9733
+2024-25,Hunter New England,Hospital admissions,227661
+2024-25,Illawarra Shoalhaven,Hospital admissions,105709
+2024-25,Mid North Coast,Hospital admissions,82447
+2024-25,Murrumbidgee,Hospital admissions,71296
+2024-25,Nepean Blue Mountains,Hospital admissions,82546
+2024-25,Northern NSW,Hospital admissions,98792
+2024-25,Northern Sydney,Hospital admissions,148598
+2024-25,South Eastern Sydney,Hospital admissions,187418
+2024-25,South Western Sydney,Hospital admissions,251524
+2024-25,Southern NSW,Hospital admissions,50840
+2024-25,Sydney,Hospital admissions,164933
+2024-25,Western NSW,Hospital admissions,91435
+2024-25,Western Sydney,Hospital admissions,181494

@@ -1,0 +1,121 @@
+year,LHD,indicator,value
+2017-18,Central Coast,Median ED waiting time (minutes),184.2
+2017-18,Far West,Median ED waiting time (minutes),60.8
+2017-18,Hunter New England,Median ED waiting time (minutes),146.0
+2017-18,Illawarra Shoalhaven,Median ED waiting time (minutes),183.8
+2017-18,Mid North Coast,Median ED waiting time (minutes),141.2
+2017-18,Murrumbidgee,Median ED waiting time (minutes),88.8
+2017-18,Nepean Blue Mountains,Median ED waiting time (minutes),197.8
+2017-18,Northern NSW,Median ED waiting time (minutes),121.8
+2017-18,Northern Sydney,Median ED waiting time (minutes),178.0
+2017-18,South Eastern Sydney,Median ED waiting time (minutes),193.2
+2017-18,South Western Sydney,Median ED waiting time (minutes),207.0
+2017-18,Southern NSW,Median ED waiting time (minutes),114.5
+2017-18,Sydney,Median ED waiting time (minutes),203.8
+2017-18,Western NSW,Median ED waiting time (minutes),107.8
+2017-18,Western Sydney,Median ED waiting time (minutes),201.2
+2018-19,Central Coast,Median ED waiting time (minutes),199.2
+2018-19,Far West,Median ED waiting time (minutes),72.2
+2018-19,Hunter New England,Median ED waiting time (minutes),152.2
+2018-19,Illawarra Shoalhaven,Median ED waiting time (minutes),195.8
+2018-19,Mid North Coast,Median ED waiting time (minutes),138.0
+2018-19,Murrumbidgee,Median ED waiting time (minutes),94.8
+2018-19,Nepean Blue Mountains,Median ED waiting time (minutes),196.2
+2018-19,Northern NSW,Median ED waiting time (minutes),119.5
+2018-19,Northern Sydney,Median ED waiting time (minutes),188.7
+2018-19,South Eastern Sydney,Median ED waiting time (minutes),195.2
+2018-19,South Western Sydney,Median ED waiting time (minutes),214.0
+2018-19,Southern NSW,Median ED waiting time (minutes),120.2
+2018-19,Sydney,Median ED waiting time (minutes),209.0
+2018-19,Western NSW,Median ED waiting time (minutes),113.8
+2018-19,Western Sydney,Median ED waiting time (minutes),206.0
+2019-20,Central Coast,Median ED waiting time (minutes),204.5
+2019-20,Far West,Median ED waiting time (minutes),87.2
+2019-20,Hunter New England,Median ED waiting time (minutes),151.0
+2019-20,Illawarra Shoalhaven,Median ED waiting time (minutes),205.0
+2019-20,Mid North Coast,Median ED waiting time (minutes),134.5
+2019-20,Murrumbidgee,Median ED waiting time (minutes),101.2
+2019-20,Nepean Blue Mountains,Median ED waiting time (minutes),195.8
+2019-20,Northern NSW,Median ED waiting time (minutes),123.8
+2019-20,Northern Sydney,Median ED waiting time (minutes),172.2
+2019-20,South Eastern Sydney,Median ED waiting time (minutes),175.0
+2019-20,South Western Sydney,Median ED waiting time (minutes),206.0
+2019-20,Southern NSW,Median ED waiting time (minutes),123.0
+2019-20,Sydney,Median ED waiting time (minutes),199.0
+2019-20,Western NSW,Median ED waiting time (minutes),111.5
+2019-20,Western Sydney,Median ED waiting time (minutes),217.5
+2020-21,Central Coast,Median ED waiting time (minutes),215.0
+2020-21,Far West,Median ED waiting time (minutes),114.0
+2020-21,Hunter New England,Median ED waiting time (minutes),164.5
+2020-21,Illawarra Shoalhaven,Median ED waiting time (minutes),211.5
+2020-21,Mid North Coast,Median ED waiting time (minutes),147.2
+2020-21,Murrumbidgee,Median ED waiting time (minutes),115.0
+2020-21,Nepean Blue Mountains,Median ED waiting time (minutes),214.8
+2020-21,Northern NSW,Median ED waiting time (minutes),135.5
+2020-21,Northern Sydney,Median ED waiting time (minutes),161.5
+2020-21,South Eastern Sydney,Median ED waiting time (minutes),192.0
+2020-21,South Western Sydney,Median ED waiting time (minutes),211.5
+2020-21,Southern NSW,Median ED waiting time (minutes),131.5
+2020-21,Sydney,Median ED waiting time (minutes),208.8
+2020-21,Western NSW,Median ED waiting time (minutes),101.5
+2020-21,Western Sydney,Median ED waiting time (minutes),217.8
+2021-22,Central Coast,Median ED waiting time (minutes),244.2
+2021-22,Far West,Median ED waiting time (minutes),116.0
+2021-22,Hunter New England,Median ED waiting time (minutes),179.2
+2021-22,Illawarra Shoalhaven,Median ED waiting time (minutes),224.0
+2021-22,Mid North Coast,Median ED waiting time (minutes),148.8
+2021-22,Murrumbidgee,Median ED waiting time (minutes),122.0
+2021-22,Nepean Blue Mountains,Median ED waiting time (minutes),231.8
+2021-22,Northern NSW,Median ED waiting time (minutes),138.2
+2021-22,Northern Sydney,Median ED waiting time (minutes),176.8
+2021-22,South Eastern Sydney,Median ED waiting time (minutes),208.5
+2021-22,South Western Sydney,Median ED waiting time (minutes),227.0
+2021-22,Southern NSW,Median ED waiting time (minutes),134.5
+2021-22,Sydney,Median ED waiting time (minutes),220.2
+2021-22,Western NSW,Median ED waiting time (minutes),125.2
+2021-22,Western Sydney,Median ED waiting time (minutes),242.8
+2022-23,Central Coast,Median ED waiting time (minutes),259.8
+2022-23,Far West,Median ED waiting time (minutes),130.8
+2022-23,Hunter New England,Median ED waiting time (minutes),207.5
+2022-23,Illawarra Shoalhaven,Median ED waiting time (minutes),248.0
+2022-23,Mid North Coast,Median ED waiting time (minutes),161.2
+2022-23,Murrumbidgee,Median ED waiting time (minutes),132.2
+2022-23,Nepean Blue Mountains,Median ED waiting time (minutes),247.8
+2022-23,Northern NSW,Median ED waiting time (minutes),138.5
+2022-23,Northern Sydney,Median ED waiting time (minutes),220.2
+2022-23,South Eastern Sydney,Median ED waiting time (minutes),229.0
+2022-23,South Western Sydney,Median ED waiting time (minutes),251.0
+2022-23,Southern NSW,Median ED waiting time (minutes),144.5
+2022-23,Sydney,Median ED waiting time (minutes),231.2
+2022-23,Western NSW,Median ED waiting time (minutes),151.8
+2022-23,Western Sydney,Median ED waiting time (minutes),283.8
+2023-24,Central Coast,Median ED waiting time (minutes),262.8
+2023-24,Far West,Median ED waiting time (minutes),127.8
+2023-24,Hunter New England,Median ED waiting time (minutes),213.8
+2023-24,Illawarra Shoalhaven,Median ED waiting time (minutes),238.0
+2023-24,Mid North Coast,Median ED waiting time (minutes),157.8
+2023-24,Murrumbidgee,Median ED waiting time (minutes),134.5
+2023-24,Nepean Blue Mountains,Median ED waiting time (minutes),260.8
+2023-24,Northern NSW,Median ED waiting time (minutes),142.2
+2023-24,Northern Sydney,Median ED waiting time (minutes),231.5
+2023-24,South Eastern Sydney,Median ED waiting time (minutes),235.2
+2023-24,South Western Sydney,Median ED waiting time (minutes),264.8
+2023-24,Southern NSW,Median ED waiting time (minutes),151.2
+2023-24,Sydney,Median ED waiting time (minutes),235.2
+2023-24,Western NSW,Median ED waiting time (minutes),158.5
+2023-24,Western Sydney,Median ED waiting time (minutes),291.2
+2024-25,Central Coast,Median ED waiting time (minutes),280.0
+2024-25,Far West,Median ED waiting time (minutes),130.5
+2024-25,Hunter New England,Median ED waiting time (minutes),217.8
+2024-25,Illawarra Shoalhaven,Median ED waiting time (minutes),245.8
+2024-25,Mid North Coast,Median ED waiting time (minutes),163.5
+2024-25,Murrumbidgee,Median ED waiting time (minutes),138.2
+2024-25,Nepean Blue Mountains,Median ED waiting time (minutes),256.0
+2024-25,Northern NSW,Median ED waiting time (minutes),146.5
+2024-25,Northern Sydney,Median ED waiting time (minutes),240.0
+2024-25,South Eastern Sydney,Median ED waiting time (minutes),240.0
+2024-25,South Western Sydney,Median ED waiting time (minutes),267.8
+2024-25,Southern NSW,Median ED waiting time (minutes),158.8
+2024-25,Sydney,Median ED waiting time (minutes),234.2
+2024-25,Western NSW,Median ED waiting time (minutes),168.5
+2024-25,Western Sydney,Median ED waiting time (minutes),290.2
