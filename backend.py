@@ -8,24 +8,25 @@ def load_data():
     ed = pd.read_csv("nsw_ed_presentations.csv")
     waiting_times = pd.read_csv("nsw_waiting_time.csv")
     asthma_hospitalisation_rates = pd.read_csv("nsw_asthma_hospitalisation_rates.csv")
+    smoking = pd.read_csv("nsw_smoking.csv")
 
-    return admissions, ed, waiting_times, asthma_hospitalisation_rates
+    return admissions, ed, waiting_times, asthma_hospitalisation_rates, smoking
 
-def combine_data(admissions, ed, waiting_times, asthma_hospitalisation_rates):
-    return pd.concat([admissions, ed, waiting_times, asthma_hospitalisation_rates], ignore_index=True)
+def combine_data(admissions, ed, waiting_times, asthma_hospitalisation_rates, smoking):
+    return pd.concat([admissions, ed, waiting_times, asthma_hospitalisation_rates, smoking], ignore_index=True)
 
 
-#Filters the dataset by year, local hospital district (lhd), and health indicator
+# Filters dataset by year, Local Health District (LHD), and health indicator
 def filter_data(df, year=None, lhd=None, indicator=None):
     filtered = df.copy()
 
-    if year:
+    if year is not None and year != "All":
         filtered = filtered[filtered["year"] == year]
 
-    if lhd and lhd != "All":
+    if lhd is not None and lhd != "All":
         filtered = filtered[filtered["LHD"] == lhd]
 
-    if indicator:
+    if indicator is not None and indicator != "All":
         filtered = filtered[filtered["indicator"] == indicator]
 
     return filtered
@@ -93,13 +94,14 @@ def compare_ed_admissions(df):
 
 if __name__ == "__main__":
 
-    admissions, ed, waiting_times, asthma_hospitalisation_rates = load_data()
+    admissions, ed, waiting_times, asthma_hospitalisation_rates, smoking = load_data()
 
     data = combine_data(
         admissions,
         ed,
         waiting_times,
-        asthma_hospitalisation_rates
+        asthma_hospitalisation_rates,
+        smoking
     )
 
     print(data.head())
@@ -173,3 +175,22 @@ if __name__ == "__main__":
     comparison_test = compare_ed_admissions(data)
 
     print(comparison_test.head())
+
+
+
+    # Test smoking prevalence for Western Sydney
+    smoking_test = filter_data(
+        data,
+        lhd="Western Sydney",
+        indicator="Smoking prevalence"
+    )
+
+    print("Smoking prevalence data:")
+    print(smoking_test)
+
+    smoking_avg = get_average(
+        smoking_test,
+        "Smoking prevalence"
+    )
+
+    print("Average smoking prevalence:", smoking_avg)
