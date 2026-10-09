@@ -312,3 +312,21 @@ if all_admission_categories:
 
 else:
     print("\nNo NSW admissions data found.")
+
+
+
+
+
+#search = datasets_df[
+   # datasets_df["data_set_name"].str.contains(
+       # "waiting",
+      #  case=False,
+       # na=False
+  #  )
+#]
+
+#print(
+   # search[
+    #    ["data_set_name", "reported_measure_name"]
+  #  ].drop_duplicates().to_string(index=False)
+#)
