@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091822">
+  <title>EpiCentre — NSW Public Health Intelligence</title>
+  <meta name="description" content="Explore public health outcomes, hospital demand and regional patterns across NSW.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">E</span><div><strong>EpiCentre</strong><small>NSW Health Intelligence</small></div></div>
+      <div class="filter-heading"><span>Dashboard controls</span><button id="resetFilters" type="button">Reset</button></div>
+      <label>Reporting year<select id="yearFilter"></select></label>
+      <label>Local Health District<select id="lhdFilter"></select></label>
+      <label>Health indicator<select id="indicatorFilter"></select></label>
+      <div class="sidebar-note"><span class="pulse"></span><div><strong>Filter scope</strong><p>Year and district apply across the dashboard. Indicator controls the map, regional and trend views; KPI cards and relationship pairs retain their named measures.</p></div></div>
+      <div class="data-note">Source datasets supplied with the original EpiCentre Streamlit project.</div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle filters" aria-expanded="false">☰</button>
+        <nav class="tabs" aria-label="Dashboard sections">
+          <button class="tab active" data-tab="overview">Overview</button>
+          <button class="tab" data-tab="regional">Regional analysis</button>
+          <button class="tab" data-tab="trends">Trends</button>
+          <button class="tab" data-tab="relationships">Relationships</button>
+        </nav>
+        <div class="status-pill"><span></span> NSW dataset</div>
+      </header>
+
+      <section class="hero">
+        <div><p class="eyebrow">Public health intelligence dashboard</p><h1>Health, seen clearly.</h1><p>Explore outcomes, hospital demand and regional health patterns across New South Wales.</p></div>
+        <div class="hero-year"><span>Reporting view</span><strong id="heroYear">Latest available</strong></div>
+      </section>
+
+      <section class="view active" id="overview">
+        <div class="kpi-grid" id="kpiGrid"></div>
+        <details class="method-note">
+          <summary>How the headline measures are calculated</summary>
+          <p>ED presentations and hospital admissions are summed across the selected districts. Waiting time, asthma rate and smoking prevalence are unweighted averages across available Local Health District records. When “All” years is selected, each measure uses its own latest available reporting year.</p>
+        </details>
+        <article class="panel map-panel">
+          <div class="panel-head"><div><p class="eyebrow">Geographic view</p><h2>NSW Local Health Districts</h2></div><div class="legend" id="legend"></div></div>
+          <div id="map" role="application" aria-label="Interactive map of NSW Local Health Districts"></div>
+          <div class="map-caption" id="mapCaption"></div>
+          <p class="chart-explainer">Each district is coloured by the selected indicator for the displayed year. Darker teal represents a higher recorded value. Hover for the exact value, or click a district to apply it as the dashboard filter.</p>
+        </article>
+      </section>
+
+      <section class="view" id="regional">
+        <div class="section-intro"><p class="eyebrow">Regional analysis</p><h2>Compare every district</h2><p id="regionalSubtitle"></p></div>
+        <article class="panel"><div class="panel-head"><h3>Local Health District ranking</h3><span class="hint">Hover bars for values</span></div><div class="bar-chart" id="rankingChart"></div><p class="chart-explainer" id="rankingExplanation"></p></article>
+        <article class="panel"><div class="panel-head"><h3>Performance heatmap</h3><span class="hint">All available years</span></div><div class="heatmap-wrap"><div class="heatmap" id="heatmap"></div></div><p class="chart-explainer">Rows are districts and columns are reporting years. Darker cells mean higher values within the selected indicator’s full observed range; pale cells with a dash have no record.</p></article>
+      </section>
+
+      <section class="view" id="trends">
+        <div class="section-intro"><p class="eyebrow">Historical trends</p><h2>Follow the signal over time</h2><p id="trendSubtitle"></p></div>
+        <article class="panel"><div class="panel-head"><h3>Trend over time</h3><span class="hint" id="trendScope"></span></div><div class="line-chart" id="trendChart"></div><p class="chart-explainer" id="trendExplanation"></p></article>
+        <article class="panel"><div class="panel-head"><h3>Year-on-year change</h3><span class="hint" id="yoyPeriod"></span></div><div class="signed-chart" id="yoyChart"></div><p class="chart-explainer">Shows relative change from the immediately preceding reporting year. Teal bars above zero are increases; coral bars below zero are decreases. This is percentage change, not percentage-point change.</p></article>
+      </section>
+
+      <section class="view" id="relationships">
+        <div class="section-intro"><p class="eyebrow">Health relationships</p><h2>Explore possible associations</h2><p>Matching district and reporting-year records are compared. Correlation does not imply causation.</p></div>
+        <div class="relationship-grid">
+          <article class="panel"><div class="panel-head"><h3>Smoking vs asthma</h3><span class="hint" id="smokingAsthmaPeriod"></span></div><div class="scatter-chart" id="smokingAsthma"></div><p class="chart-explainer">Each dot is one district-year match. Moving right indicates higher smoking prevalence; moving up indicates a higher age-standardised asthma hospitalisation rate.</p></article>
+          <article class="panel"><div class="panel-head"><h3>ED volume vs waiting time</h3><span class="hint" id="edWaitingPeriod"></span></div><div class="scatter-chart" id="edWaiting"></div><p class="chart-explainer">Each dot is one district-year match. The chart explores whether districts with more ED presentations also report longer median waiting times.</p></article>
+        </div>
+        <article class="panel"><div class="panel-head"><h3>ED presentations vs admissions</h3><span class="hint" id="comparisonYear"></span></div><div class="paired-chart" id="edAdmissions"></div><div class="series-key"><span><i class="key-ed"></i>ED presentations</span><span><i class="key-adm"></i>Hospital admissions</span></div><p class="chart-explainer">Paired bars compare the two reported counts within each district. The datasets may cover different patient populations and episodes, so this is not a patient-conversion measure.</p></article>
+      </section>
+
+      <footer><span>EpiCentre</span><span>NSW Public Health Intelligence Dashboard</span><span id="updatedStamp"></span></footer>
+    </main>
+  </div>
+  <div class="tooltip" id="tooltip"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="app.js?v=4"></script>
+</body>
+</html>
