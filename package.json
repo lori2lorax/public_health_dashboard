@@ -1,0 +1,15 @@
+{
+  "name": "epicentre-nsw-health-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive NSW public health intelligence dashboard",
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "build:data": "node tools/build-data.mjs",
+    "validate": "node --check dist/app.js && node tools/validate-site.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
